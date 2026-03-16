@@ -366,21 +366,22 @@ Not enough human familarity ratings available (<100)
 
 ---
 
-## Summary and Limitations
+## Summary and Future Work
 
 :::: {.columns}
 ::: {.column width="52%"}
 
-1. LLM-derived familiarity is not a single construct; different model families behave differently.
-2. Familiarity signals are very good at predicting lexical decision RT, well beyond basic controls, especially in adults.
-3. Frequency is also strong, but is distributed less like RTs.
-4. Familiarity, surprisal, and frequency capture overlapping and non-identical parts of RTs.
+Summary:
+
+- LLM-derived familiarity is not a single construct; different model families behave differently.
+- Familiarity, surprisal, and frequency capture overlapping and non-identical parts of RTs.
 
 ::: 
 
 ::: {.column width="52%"}
 
-Todo's: 
+Future work:
+
 - Multilingual logprobs-based familiarity and surprisal using a base model with open training data
 - Compare effects across more words (not only the human familiarity norms) 
 - Include more German lexical decision data 
@@ -398,7 +399,7 @@ Todo's:
 - Conde, J., Martinez, G., Grandury, M., Arriaga, C., Haro, J., Schroeder, S., Hintz, F., Reviriego, P., & Brysbaert, M. (2026). Updating the German Psycholinguistic Word Toolbox with AI-generated estimates of concreteness, valence, arousal, age of acquisition, and familiarity. *Journal of Cognition, 9*(1), 9. https://doi.org/10.5334/joc.482
 - Guenther, F., Marelli, M., & Boelte, J. (2020). Semantic transparency effects in German compounds: A large dataset and multiple-task investigation. *Behavior Research Methods, 52*(3), 1208-1224. https://doi.org/10.3758/s13428-019-01311-4
 - Mandera, P., Keuleers, E., & Brysbaert, M. (2020). Recognition times for 62 thousand English words: Data from the English Crowdsourcing Project. *Behavior Research Methods, 52*(2), 741-760. https://doi.org/10.3758/s13428-019-01272-8
-- Schepens, J., Woloszyn, H., et al. (2025). Can large language models generate useful linguistic corpora? *Open Mind, 9*. https://doi.org/10.1162/OPMI.a.30
+- Schepens, J., Woloszyn, H., Marx, N., Gagl, B. (2025). Can large language models generate useful linguistic corpora? *Open Mind, 9*. https://doi.org/10.1162/OPMI.a.30
 - Schroeder, S., Wuerzner, K. M., Heister, J., Geyken, A., & Kliegl, R. (2015). childLex: A lexical database of German read by children. *Behavior Research Methods, 47*(4), 1085-1094. https://doi.org/10.3758/s13428-014-0528-1
 - Scott, G. G., Keitel, A., Becirspahic, M., Yao, B., & Sereno, S. C. (2019). The Glasgow Norms: Ratings of 5,500 words on nine scales. *Behavior Research Methods, 51*, 1258-1270. https://doi.org/10.3758/s13428-018-1099-3
 - Team OLMo, Ettinger, A., et al. (2025). *OLMo 3* [Preprint]. arXiv. https://arxiv.org/abs/2512.13961
