@@ -89,7 +89,7 @@ window.Quarto = {
   <li><a href="#adult-model-comparison" id="toc-adult-model-comparison" class="nav-link" data-scroll-target="#adult-model-comparison">Adult Model Comparison</a></li>
   <li><a href="#german-kids-similar-pattern" id="toc-german-kids-similar-pattern" class="nav-link" data-scroll-target="#german-kids-similar-pattern">German Kids: Similar Pattern</a></li>
   <li><a href="#adults-vs-kids" id="toc-adults-vs-kids" class="nav-link" data-scroll-target="#adults-vs-kids">Adults vs Kids</a></li>
-  <li><a href="#summary-and-limitations" id="toc-summary-and-limitations" class="nav-link" data-scroll-target="#summary-and-limitations">Summary and Limitations</a></li>
+  <li><a href="#summary-and-future-work" id="toc-summary-and-future-work" class="nav-link" data-scroll-target="#summary-and-future-work">Summary and Future Work</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#backup-methods-notes" id="toc-backup-methods-notes" class="nav-link" data-scroll-target="#backup-methods-notes">Backup: Methods Notes</a></li>
   <li><a href="#surprisal-panels-gpt-oss-vs-ai-familiarity" id="toc-surprisal-panels-gpt-oss-vs-ai-familiarity" class="nav-link" data-scroll-target="#surprisal-panels-gpt-oss-vs-ai-familiarity">Surprisal Panels: GPT-OSS vs AI Familiarity</a></li>
@@ -378,18 +378,22 @@ S(w) = - \sum_{i=1}^{k} \log p(t_i \mid \text{prefix}, t_{&lt;i})
 </ul>
 <hr>
 </section>
-<section id="summary-and-limitations" class="level2">
-<h2 class="anchored" data-anchor-id="summary-and-limitations">Summary and Limitations</h2>
+<section id="summary-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="summary-and-future-work">Summary and Future Work</h2>
 <div class="columns">
 <div class="column" style="width:52%;">
-<ol type="1">
+<p>Summary:</p>
+<ul>
 <li>LLM-derived familiarity is not a single construct; different model families behave differently.</li>
-<li>Familiarity signals are very good at predicting lexical decision RT, well beyond basic controls, especially in adults.</li>
-<li>Frequency is also strong, but is distributed less like RTs.</li>
 <li>Familiarity, surprisal, and frequency capture overlapping and non-identical parts of RTs.</li>
-</ol>
+</ul>
 </div><div class="column" style="width:52%;">
-<p>Todo’s: - Multilingual logprobs-based familiarity and surprisal using a base model with open training data - Compare effects across more words (not only the human familiarity norms) - Include more German lexical decision data</p>
+<p>Future work:</p>
+<ul>
+<li>Multilingual logprobs-based familiarity and surprisal using a base model with open training data</li>
+<li>Compare effects across more words (not only the human familiarity norms)</li>
+<li>Include more German lexical decision data</li>
+</ul>
 </div>
 </div>
 <hr>
@@ -404,7 +408,7 @@ S(w) = - \sum_{i=1}^{k} \log p(t_i \mid \text{prefix}, t_{&lt;i})
 <li>Conde, J., Martinez, G., Grandury, M., Arriaga, C., Haro, J., Schroeder, S., Hintz, F., Reviriego, P., &amp; Brysbaert, M. (2026). Updating the German Psycholinguistic Word Toolbox with AI-generated estimates of concreteness, valence, arousal, age of acquisition, and familiarity. <em>Journal of Cognition, 9</em>(1), 9. https://doi.org/10.5334/joc.482</li>
 <li>Guenther, F., Marelli, M., &amp; Boelte, J. (2020). Semantic transparency effects in German compounds: A large dataset and multiple-task investigation. <em>Behavior Research Methods, 52</em>(3), 1208-1224. https://doi.org/10.3758/s13428-019-01311-4</li>
 <li>Mandera, P., Keuleers, E., &amp; Brysbaert, M. (2020). Recognition times for 62 thousand English words: Data from the English Crowdsourcing Project. <em>Behavior Research Methods, 52</em>(2), 741-760. https://doi.org/10.3758/s13428-019-01272-8</li>
-<li>Schepens, J., Woloszyn, H., et al.&nbsp;(2025). Can large language models generate useful linguistic corpora? <em>Open Mind, 9</em>. https://doi.org/10.1162/OPMI.a.30</li>
+<li>Schepens, J., Woloszyn, H., Marx, N., Gagl, B. (2025). Can large language models generate useful linguistic corpora? <em>Open Mind, 9</em>. https://doi.org/10.1162/OPMI.a.30</li>
 <li>Schroeder, S., Wuerzner, K. M., Heister, J., Geyken, A., &amp; Kliegl, R. (2015). childLex: A lexical database of German read by children. <em>Behavior Research Methods, 47</em>(4), 1085-1094. https://doi.org/10.3758/s13428-014-0528-1</li>
 <li>Scott, G. G., Keitel, A., Becirspahic, M., Yao, B., &amp; Sereno, S. C. (2019). The Glasgow Norms: Ratings of 5,500 words on nine scales. <em>Behavior Research Methods, 51</em>, 1258-1270. https://doi.org/10.3758/s13428-018-1099-3</li>
 <li>Team OLMo, Ettinger, A., et al.&nbsp;(2025). <em>OLMo 3</em> [Preprint]. arXiv. https://arxiv.org/abs/2512.13961</li>
