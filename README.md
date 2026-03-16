@@ -9,6 +9,7 @@ Job Schepens — Universität zu Köln
 ## Contents
 
 - **[Slides](https://jobschepens.github.io/teap-present/)** — RevealJS presentation (TeaP 2026)
+- **[PDF](https://jobschepens.github.io/teap-present/slides.pdf)** — PDF version of the slides
 - [preregistration.md](preregistration.md) — OSF preregistration
 
 ## Abstract

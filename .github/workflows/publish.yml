@@ -31,6 +31,12 @@ jobs:
       - name: Render
         run: quarto render word_familiarity_project_draft_slides.qmd
 
+      - name: Install decktape
+        run: npm install -g decktape
+
+      - name: Generate PDF
+        run: decktape reveal docs/index.html docs/slides.pdf --chrome-arg=--no-sandbox
+
       - name: Add .nojekyll
         run: touch docs/.nojekyll
 
