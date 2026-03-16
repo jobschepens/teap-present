@@ -10,5 +10,5 @@ execute:
 
 format:
   revealjs:
-    embed-resources: true
+    embed-resources: false
     output-file: index.html
