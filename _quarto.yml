@@ -1,0 +1,14 @@
+project:
+  type: default
+  output-dir: docs
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
+
+format:
+  revealjs:
+    embed-resources: true
+    output-file: index.html
