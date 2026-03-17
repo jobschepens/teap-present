@@ -1,0 +1,177 @@
+{
+  "language": "english",
+  "strict_prereg": false,
+  "analysis_rows": 4236,
+  "selected_frequency_predictor": "freq_multilex",
+  "selected_ai_familiarity_predictor": "gpt_fam",
+  "frequency_candidate_comparison": [
+    {
+      "candidate": "freq_multilex",
+      "nobs": 4386,
+      "aic": -13966.995092875364,
+      "bic": -13947.836574088431,
+      "r2": 0.46465529891905233,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "freq_subtlex",
+      "nobs": 4386,
+      "aic": -13800.738623189616,
+      "bic": -13781.580104402683,
+      "r2": 0.4439729120779867,
+      "sample_mode": "common_listwise"
+    }
+  ],
+  "ai_familiarity_candidate_comparison": [
+    {
+      "candidate": "gpt_fam",
+      "nobs": 4386,
+      "aic": -14905.91150082355,
+      "bic": -14873.98063617866,
+      "r2": 0.568215069003515,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "gptoss_fam",
+      "nobs": 4386,
+      "aic": -14575.394167306316,
+      "bic": -14543.463302661426,
+      "r2": 0.5344195212077038,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "apertus_fam",
+      "nobs": 4386,
+      "aic": -14236.454435241201,
+      "bic": -14204.523570596311,
+      "r2": 0.4970138629236759,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "olmo_fam",
+      "nobs": 4386,
+      "aic": -14025.234722366287,
+      "bic": -13993.303857721397,
+      "r2": 0.47219847231231526,
+      "sample_mode": "common_listwise"
+    }
+  ],
+  "divergence_predictors": [
+    "divergence_apertus_fam",
+    "divergence_gpt_fam",
+    "divergence_olmo_fam",
+    "divergence_gptoss_fam"
+  ],
+  "divergence_metadata": {
+    "divergence_apertus_fam": {
+      "status": "ok",
+      "source_ai_term": "apertus_fam",
+      "n_pairwise": 4386,
+      "intercept": 2.756248993733398,
+      "slope_human_fam": 0.5795100200679322,
+      "r2": 0.4397162849245725
+    },
+    "divergence_gpt_fam": {
+      "status": "ok",
+      "source_ai_term": "gpt_fam",
+      "n_pairwise": 4386,
+      "intercept": 3.285214978171838,
+      "slope_human_fam": 0.5899801249034207,
+      "r2": 0.6319157915677635
+    },
+    "divergence_olmo_fam": {
+      "status": "ok",
+      "source_ai_term": "olmo_fam",
+      "n_pairwise": 4386,
+      "intercept": 3.7486095374513293,
+      "slope_human_fam": 0.3079069797412256,
+      "r2": 0.33619785933448243
+    },
+    "divergence_gptoss_fam": {
+      "status": "ok",
+      "source_ai_term": "gptoss_fam",
+      "n_pairwise": 4386,
+      "intercept": 2.5207606478691624,
+      "slope_human_fam": 0.6579977183199821,
+      "r2": 0.52501694682879
+    }
+  },
+  "predictors_used_in_listwise_sample": [
+    "aoa",
+    "apertus_fam",
+    "child_old20",
+    "divergence_apertus_fam",
+    "divergence_gpt_fam",
+    "divergence_gptoss_fam",
+    "divergence_olmo_fam",
+    "freq_multilex",
+    "freq_subtlex",
+    "gpt_fam",
+    "gptoss_fam",
+    "gptoss_sup",
+    "human_fam",
+    "llm_freq",
+    "olmo_fam",
+    "word_length"
+  ],
+  "missing_prereg_predictors": [],
+  "models_fitted": [
+    "M0",
+    "M1",
+    "M2",
+    "M2.adj",
+    "M2.old20_aoa",
+    "M3.gptoss_sup",
+    "M3.gptoss_sup.adj",
+    "M4.apertus",
+    "M4.apertus.adj",
+    "M4.gpt",
+    "M4.gpt.adj",
+    "M4.gptoss_fam",
+    "M4.gptoss_fam.adj",
+    "M4.human",
+    "M4.human.adj",
+    "M4.olmo",
+    "M4.olmo.adj",
+    "M5.freq_multilex",
+    "M5.freq_multilex.adj",
+    "M5.freq_subtlex",
+    "M5.freq_subtlex.adj",
+    "M6.llmfreq",
+    "M6.llmfreq.adj",
+    "M7.gptoss_sup_gptoss_fam",
+    "M7.gptoss_sup_gptoss_fam.adj",
+    "M7.multilex_gptoss_fam",
+    "M7.multilex_gptoss_fam.adj",
+    "M7.multilex_gptoss_sup",
+    "M7.multilex_gptoss_sup.adj",
+    "M8.divergence.apertus_fam",
+    "M8.divergence.gpt_fam",
+    "M8.divergence.gptoss_fam",
+    "M8.divergence.olmo_fam"
+  ],
+  "models_skipped": [],
+  "column_mapping": {
+    "language": "english",
+    "input_csv": "/home/jobschepens/genmoretext/lit/word_familiarity_study/report_ready_20260310/analysis_english_merged.csv",
+    "orth_column_used": null,
+    "childlex_column_used": null,
+    "child_old20_column_used": null,
+    "aoa_column_used": "AOA_M",
+    "freq_subtlex_column_used": "SUBTLEX",
+    "freq_multilex_column_used": "Multilex",
+    "english_aoa_excel": "/home/jobschepens/genmoretext/data/aoa/Copy of AI Generated AoA Estimates for the ECP.xlsx",
+    "english_aoa_column_requested": "AI_Kuperman_et_al_2012 _AoA_Finetuned",
+    "english_aoa_merge_policy": "external_preferred_then_existing",
+    "english_old20_csv": "/home/jobschepens/genmoretext/lit/word_familiarity_study/report_ready_20260310/orthographic_neighborhood_clearpond_english.csv",
+    "english_old20_column_requested": "orthographic_neighborhood_coltheart_n",
+    "llm_frequency_source": "external_frequency_file",
+    "llm_frequency_filter_policy": "",
+    "llm_frequency_imputation_policy": "floor=min_observed_matched_value_within_language",
+    "llm_frequency_imputation_value": 0.3010299956639812,
+    "initial_rows": 4432,
+    "rows_after_valid_log_rt": 4432,
+    "rows_after_log_rt_outlier_exclusion": 4386,
+    "excluded_nonpositive_rt": 0
+  }
+}

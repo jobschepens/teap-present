@@ -1,0 +1,176 @@
+{
+  "language": "german",
+  "strict_prereg": false,
+  "analysis_rows": 2114,
+  "selected_frequency_predictor": "freq_multilex",
+  "selected_ai_familiarity_predictor": "gpt_fam",
+  "frequency_candidate_comparison": [
+    {
+      "candidate": "freq_multilex",
+      "nobs": 2114,
+      "aic": -3345.27670584704,
+      "bic": -3328.3076943477495,
+      "r2": 0.5311922522101048,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "freq_subtlex",
+      "nobs": 2114,
+      "aic": -3219.499254923656,
+      "bic": -3202.5302434243654,
+      "r2": 0.5024529425006756,
+      "sample_mode": "common_listwise"
+    }
+  ],
+  "ai_familiarity_candidate_comparison": [
+    {
+      "candidate": "gpt_fam",
+      "nobs": 2114,
+      "aic": -3374.0697122264373,
+      "bic": -3345.7880263942866,
+      "r2": 0.5384084251335932,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "apertus_fam",
+      "nobs": 2114,
+      "aic": -3321.4212491438047,
+      "bic": -3293.139563311654,
+      "r2": 0.5267682961929716,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "gptoss_fam",
+      "nobs": 2114,
+      "aic": -3295.3014353103954,
+      "bic": -3267.0197494782446,
+      "r2": 0.5208849462496165,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "olmo_fam",
+      "nobs": 2114,
+      "aic": -3258.750783037549,
+      "bic": -3230.469097205398,
+      "r2": 0.5125291121521365,
+      "sample_mode": "common_listwise"
+    }
+  ],
+  "divergence_predictors": [
+    "divergence_apertus_fam",
+    "divergence_gpt_fam",
+    "divergence_olmo_fam",
+    "divergence_gptoss_fam"
+  ],
+  "divergence_metadata": {
+    "divergence_apertus_fam": {
+      "status": "ok",
+      "source_ai_term": "apertus_fam",
+      "n_pairwise": 2114,
+      "intercept": 0.6657870602872434,
+      "slope_human_fam": 0.7704303592080802,
+      "r2": 0.30086038181376373
+    },
+    "divergence_gpt_fam": {
+      "status": "ok",
+      "source_ai_term": "gpt_fam",
+      "n_pairwise": 2114,
+      "intercept": -1.1533075250510676,
+      "slope_human_fam": 1.0689596058334696,
+      "r2": 0.4486091996466537
+    },
+    "divergence_olmo_fam": {
+      "status": "ok",
+      "source_ai_term": "olmo_fam",
+      "n_pairwise": 2114,
+      "intercept": 4.064435199709701,
+      "slope_human_fam": 0.036127763218589924,
+      "r2": 0.0278834429114313
+    },
+    "divergence_gptoss_fam": {
+      "status": "ok",
+      "source_ai_term": "gptoss_fam",
+      "n_pairwise": 2114,
+      "intercept": -1.4763701522545114,
+      "slope_human_fam": 1.0993183772466635,
+      "r2": 0.3741069730548324
+    }
+  },
+  "predictors_used_in_listwise_sample": [
+    "apertus_fam",
+    "divergence_apertus_fam",
+    "divergence_gpt_fam",
+    "divergence_gptoss_fam",
+    "divergence_olmo_fam",
+    "freq_multilex",
+    "freq_subtlex",
+    "gpt_fam",
+    "gptoss_fam",
+    "gptoss_sup",
+    "human_fam",
+    "llm_freq",
+    "olmo_fam",
+    "word_length"
+  ],
+  "missing_prereg_predictors": [],
+  "models_fitted": [
+    "M0",
+    "M1",
+    "M2",
+    "M3.gptoss_sup",
+    "M4.apertus",
+    "M4.gpt",
+    "M4.gptoss_fam",
+    "M4.human",
+    "M4.olmo",
+    "M5.freq_multilex",
+    "M5.freq_subtlex",
+    "M6.llmfreq",
+    "M7.gptoss_sup_gptoss_fam",
+    "M7.multilex_gptoss_fam",
+    "M7.multilex_gptoss_sup",
+    "M8.divergence.apertus_fam",
+    "M8.divergence.gpt_fam",
+    "M8.divergence.gptoss_fam",
+    "M8.divergence.olmo_fam"
+  ],
+  "models_skipped": [
+    "M2.adj",
+    "M2.old20_aoa",
+    "M3.gptoss_sup.adj",
+    "M4.apertus.adj",
+    "M4.gpt.adj",
+    "M4.gptoss_fam.adj",
+    "M4.human.adj",
+    "M4.olmo.adj",
+    "M5.freq_multilex.adj",
+    "M5.freq_subtlex.adj",
+    "M6.llmfreq.adj",
+    "M7.gptoss_sup_gptoss_fam.adj",
+    "M7.multilex_gptoss_fam.adj",
+    "M7.multilex_gptoss_sup.adj"
+  ],
+  "column_mapping": {
+    "language": "german",
+    "input_csv": "/home/jobschepens/genmoretext/lit/word_familiarity_study/report_ready_20260310/analysis_german_merged.csv",
+    "orth_column_used": null,
+    "childlex_column_used": null,
+    "child_old20_column_used": null,
+    "aoa_column_used": null,
+    "freq_subtlex_column_used": "subtlex_de",
+    "freq_multilex_column_used": "multilex",
+    "english_aoa_excel": null,
+    "english_aoa_column_requested": null,
+    "english_aoa_merge_policy": null,
+    "english_old20_csv": null,
+    "english_old20_column_requested": null,
+    "llm_frequency_source": "external_frequency_file",
+    "llm_frequency_filter_policy": "source=adht",
+    "llm_frequency_imputation_policy": "floor=min_observed_matched_value_within_language",
+    "llm_frequency_imputation_value": -1.3036,
+    "initial_rows": 2115,
+    "rows_after_valid_log_rt": 2115,
+    "rows_after_log_rt_outlier_exclusion": 2114,
+    "excluded_nonpositive_rt": 0
+  }
+}

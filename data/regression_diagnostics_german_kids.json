@@ -1,0 +1,121 @@
+{
+  "dataset": "german_kids",
+  "analysis_rows": 1148,
+  "selected_frequency_predictor": "freq_multilex",
+  "selected_ai_familiarity_predictor": "gptoss_fam",
+  "human_fam_regression_included": false,
+  "human_fam_regression_exclusion_reason": "Excluded from regression model set due low coverage in kids sample (non-missing human_fam=102).",
+  "frequency_candidate_comparison": [
+    {
+      "candidate": "freq_multilex",
+      "nobs": 1148,
+      "aic": -1637.9134804306814,
+      "bic": -1622.7761507000428,
+      "r2": 0.2958523745388886,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "freq_subtlex",
+      "nobs": 1148,
+      "aic": -1603.6304645288592,
+      "bic": -1588.4931347982206,
+      "r2": 0.27450710161053016,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "freq_childlex_lemma",
+      "nobs": 1148,
+      "aic": -1547.7930063313042,
+      "bic": -1532.6556766006656,
+      "r2": 0.2383476754494529,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "freq_childlex",
+      "nobs": 1148,
+      "aic": -1476.7901585913696,
+      "bic": -1461.652828860731,
+      "r2": 0.1897528252925288,
+      "sample_mode": "common_listwise"
+    }
+  ],
+  "ai_familiarity_candidate_comparison": [
+    {
+      "candidate": "gptoss_fam",
+      "nobs": 1152,
+      "aic": -1609.653187623498,
+      "bic": -1584.406913417219,
+      "r2": 0.2793738425391985,
+      "sample_mode": "common_listwise"
+    },
+    {
+      "candidate": "apertus_fam",
+      "nobs": 1152,
+      "aic": -1609.193012049997,
+      "bic": -1583.9467378437178,
+      "r2": 0.27908592518056397,
+      "sample_mode": "common_listwise"
+    }
+  ],
+  "predictors_used_in_listwise_sample": [
+    "aoa",
+    "apertus_fam",
+    "child_old20",
+    "freq_childlex",
+    "freq_childlex_lemma",
+    "freq_multilex",
+    "freq_subtlex",
+    "gpt_fam",
+    "gptoss_fam",
+    "gptoss_sup",
+    "llm_freq",
+    "word_length"
+  ],
+  "models_fitted": [
+    "M0",
+    "M1",
+    "M2",
+    "M2.adj",
+    "M2.childold20_aoa",
+    "M3.gptoss_sup",
+    "M3.gptoss_sup.adj",
+    "M4.apertus",
+    "M4.apertus.adj",
+    "M4.gpt",
+    "M4.gpt.adj",
+    "M4.gptoss_fam",
+    "M4.gptoss_fam.adj",
+    "M5.freq_childlex",
+    "M5.freq_childlex.adj",
+    "M5.freq_childlex_lemma",
+    "M5.freq_childlex_lemma.adj",
+    "M5.freq_multilex",
+    "M5.freq_multilex.adj",
+    "M5.freq_subtlex",
+    "M5.freq_subtlex.adj",
+    "M6.llmfreq",
+    "M6.llmfreq.adj",
+    "M7.full",
+    "M7.full.adj",
+    "M7.multilex_gptoss_fam",
+    "M7.multilex_gptoss_fam.adj",
+    "M7.no_ai",
+    "M7.no_ai.adj"
+  ],
+  "models_skipped": [],
+  "coverage": {
+    "initial_rows": 1152,
+    "rows_after_valid_log_rt": 1152,
+    "rows_after_log_rt_outlier_exclusion": 1152,
+    "non_missing_human_fam": 102,
+    "non_missing_gpt_fam": 1152,
+    "non_missing_gptoss_sup": 1152,
+    "non_missing_llm_freq": 1152,
+    "non_missing_freq_childlex": 1148,
+    "non_missing_freq_childlex_lemma": 1148,
+    "non_missing_freq_subtlex": 1150,
+    "non_missing_freq_multilex": 1152,
+    "non_missing_apertus_fam": 1152,
+    "non_missing_gptoss_fam": 1152
+  }
+}

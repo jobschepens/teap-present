@@ -41,44 +41,21 @@ import json
 import pandas as pd
 import numpy as np
 
-PROJECT_DIR = Path("..").resolve()
-
-adult_results_dirs = sorted(
-    [p for p in PROJECT_DIR.glob("regression_results_*") if p.is_dir()],
-    key=lambda p: p.stat().st_mtime,
-    reverse=True,
-)
-kids_results_dirs = sorted(
-    [p for p in PROJECT_DIR.glob("regression_results_german_kids_*") if p.is_dir()],
-    key=lambda p: p.stat().st_mtime,
-    reverse=True,
-)
+DATA_DIR = Path("data")
 
 def load_json(path: Path) -> dict:
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
 
-adult_dir = None
-adult_en = {}
-adult_de = {}
-for cand in adult_results_dirs:
-    en = load_json(cand / "regression_diagnostics_english.json")
-    de = load_json(cand / "regression_diagnostics_german.json")
-    if en and de:
-        adult_dir = cand
-        adult_en = en
-        adult_de = de
-        break
+adult_en = load_json(DATA_DIR / "regression_diagnostics_english.json")
+adult_de = load_json(DATA_DIR / "regression_diagnostics_german.json")
+kids_diag = load_json(DATA_DIR / "regression_diagnostics_german_kids.json")
 
-kids_dir = None
-kids_diag = {}
-for cand in kids_results_dirs:
-    kd = load_json(cand / "regression_diagnostics_german_kids.json")
-    if kd:
-        kids_dir = cand
-        kids_diag = kd
-        break
+adult_dir = DATA_DIR if adult_en else None
+kids_dir = DATA_DIR if kids_diag else None
+adult_result_stamp = "data"
+kids_result_stamp = "data"
 
 summary_rows = []
 if adult_en:
@@ -110,8 +87,6 @@ if kids_diag:
     )
 
 diag_summary = pd.DataFrame(summary_rows)
-adult_result_stamp = adult_dir.name if adult_dir is not None else "not found"
-kids_result_stamp = kids_dir.name if kids_dir is not None else "not found"
 
 _datasets = diag_summary["dataset"].tolist() if "dataset" in diag_summary.columns else []
 
